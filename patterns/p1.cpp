@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+void pattern(int m){
     int i,j;
-    for ( i = 0; i < 4; i++)
-    {
-        for ( j = 0; j < 4; j++)
+    for(i=0;i<m;i++){
+        for ( j = 0; j < m; j++)
         {
-            /* code */
-            cout << "* " ;
+            cout << " * ";
         }
-        cout << endl;
+        cout << endl;        
     }
-    
+}
+
+int main(){
+    int n;
+    cin >> n;
+    pattern(n); 
 }
